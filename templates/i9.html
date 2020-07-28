@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row"><br><br></div>
+    <div class="row">
+        <div class="col-md-3"><h1>Câu hỏi I.9:</h1></div>
+        <div class="col-md-9"><h1>{{ content }}</h1></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <audio id="ex" preload="auto" src="{{ path }}"></audio>
+            <div>
+                <button class="btn btn-warning btn-lg" type="button" onclick="document.getElementById('ex').play()">
+                    <span class="glyphicon glyphicon-volume-up" aria-hidden="false"></span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-9">
+        <form method="post" action="{% url 'i9:result' game='i9' %}">
+        {% csrf_token %}
+            <div class="form-group">
+                <input type="hidden" id="id" name="id" value="{{ r }}">
+            </div>
+            <div class="form-group">
+                <input type="hidden" id="true_key" name="true_key" value="{{ tk }}">
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <button class="btn btn-info btn-block" type="submit" value="{{ v1 }}" name="result">{{ k1 }}</button><br>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-info btn-block" type="submit" value="{{ v2 }}" name="result">{{ k2 }}</button><br>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-info btn-block" type="submit" value="{{ v3 }}" name="result">{{ k3 }}</button><br>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-info btn-block" type="submit" value="{{ v4 }}" name="result">{{ k4 }}</button><br>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="row"><br><br><br><br><br></div>
+</div>
+
+{% endblock %}

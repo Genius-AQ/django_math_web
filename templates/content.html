@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container" xmlns="http://www.w3.org/1999/html">
+    <div class="row"><br><br></div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="main-slider">
+                <div class="slide-text">
+                    <h1>Xin mời chọn trò chơi:<br><br></h1>
+                </div></div></div>
+        <div class="col-md-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="main-slider">
+                <div class="slide-text">
+                        <a href="{% url 'i9:question' %}" class="btn btn-primary btn-lg btn-block" role="button">I.9</a>
+            </div></div>
+        </div>
+        <div class="col-md-2">
+            <div class="main-slider">
+                <div class="slide-text">
+                        <a href="{% url 'i10:question' %}" class="btn btn-warning btn-lg btn-block" role="button">I.10</a>
+            </div></div>
+        </div>
+        <div class="col-md-2">
+            <div class="main-slider">
+                <div class="slide-text">
+                        <a href="{% url 'i11:question' %}" class="btn btn-danger btn-lg btn-block" role="button">I.11</a>
+            </div></div>
+        </div>
+        <div class="col-md-2">
+            <div class="main-slider">
+                <div class="slide-text">
+                        <a href="{% url 'j1:question' %}" class="btn btn-info btn-lg btn-block" role="button">J.1</a>
+            </div></div>
+        </div>
+        <div class="col-md-2">
+            <div class="main-slider">
+                <div class="slide-text">
+                        <a href="{% url 'j2:question' %}" class="btn btn-success btn-lg btn-block" role="button">J.2</a>
+            </div></div>
+        </div>
+    </div>
+    <div class="row"><br><br><br><br><br></div>
+
+</div>
+
+{% endblock %}

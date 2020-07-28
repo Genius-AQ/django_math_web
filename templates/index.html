@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section>
+            <div class="main-slider">
+                <img src="/static/triangle/images1/home/slider/slide1/circle1.png" class="slider-circle1" alt="slider image">
+                <img src="/static/triangle/images1/home/slider/slide1/circle2.png" class="slider-circle2" alt="slider image">
+                <img src="/static/triangle/images1/home/slider/slide1/cloud1.png" class="slider-cloud1" alt="slider image">
+                <img src="/static/triangle/images1/home/slider/slide1/cloud2.png" class="slider-cloud2" alt="slider image">
+                <img src="/static/triangle/images1/home/slider/slide1/cloud3.png" class="slider-cloud3" alt="slider image">
+                <!--<img src="/static/triangle/images1/home/slider/slide1/sun.png" class="slider-sun" alt="slider image">-->
+                <img src="/static/triangle/images1/home/cycle.png" class="slider-cycle" alt="slider image">
+            </div>
+        </section>
+
+
+        <section id="home-slider">
+
+            <div class="container">
+
+                <div class="main-slider">
+
+                    <div class="slide-text">
+
+                        <h1>Xin chào các bạn!</h1>
+
+                        <p><font size="4">Chào mừng đến với trò chơi của tôi = ))</font></p>
+
+                        <a href="{% url 'i9:content' %}" class="btn btn-common">BẮT ĐẦU!!!</a>
+
+                    </div>
+                        <!--<img src="/static/triangle/images1/home/slider/slide1/house.png" class="img-responsive slider-house" alt="slider image">-->
+                        <img src="/static/triangle/images2/home/slider/hill.png" class="slider-hill" alt="slider image">
+                        <img src="/static/triangle/images2/home/slider/house.png" class="slider-house" alt="slider image">
+                        <img src="/static/triangle/images2/home/slider/sun.png" class="slider-sun" alt="slider image">
+                        <img src="/static/triangle/images2/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                        <img src="/static/triangle/images2/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                    </div>
+
+            </div>
+
+            <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+
+        </section>
+
+{% endblock %}
